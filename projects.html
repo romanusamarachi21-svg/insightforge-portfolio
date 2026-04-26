@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projects</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* PAGE LAYOUT */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 60px;
+}
+
+/* CARD */
+.project-card {
+  background: #1E293B;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+/* IMAGE */
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.project-content {
+  padding: 20px;
+}
+
+.project-title {
+  color: #22D3EE;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  font-size: 14px;
+  color: #94A3B8;
+  margin-bottom: 15px;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: #0F172A;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #22D3EE;
+}
+</style>
+</head>
+
+<body>
+<div class="bg-glow"></div>
+
+<nav class="navbar">
+  <h1>InsightForge</h1>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <div class="socials">
+    <a href="#">🔗</a>
+    <a href="#">💻</a>
+  </div>
+</nav>
+
+<section class="hero">
+    <h1>Featured projects</h1>
+    <p>A collection of my data analysis projects demonstrating problem-solving skills and measurable business outcomes</p>
+  </section>
+  
+
+<div class="projects-container">
+
+  <!-- PROJECT 1 -->
+  <a href="sales-dashboard.html" style="text-decoration:none; color:inherit;">
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
+      <div class="project-content">
+        <div class="project-title">Sales Performance Analytics</div>
+        <div class="project-desc">
+          Automated reporting pipeline tracking regional sales metrics and forecasting trends.
+        </div>
+
+        <div class="tags">
+          <span class="tag">Power BI</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Excel</span>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  
+  <!-- PROJECT 2 -->
+  <a href="customer-insights.html" style="text-decoration:none; color:inherit;">
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df">
+      <div class="project-content">
+        <div class="project-title">Customer Churn Analysis</div>
+        <div class="project-desc">
+          Interactive dashboard analyzing retention patterns and key churn indicators.
+        </div>
+
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Tableau</span>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <!-- PROJECT 3 -->
+  <a href="inventory-analysis.html" style="text-decoration:none; color:inherit;">
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d">
+      <div class="project-content">
+        <div class="project-title">Inventory Optimization</div>
+        <div class="project-desc">
+          Data-driven system for tracking stock levels and reducing supply inefficiencies.
+        </div>
+
+        <div class="tags">
+          <span class="tag">SQL</span>
+          <span class="tag">Excel</span>
+        </div>
+      </div>
+    </div>
+  </a>
+
+</div>
+
+<!-- CTA -->
+<section class="cta">
+  <h1>Interested in working together?</h1>
+  <p>Learn more about my background, skills, and approach to data analysis.</p>
+  <a href="about.html" class="btn">About Me</a>
+</section>
+
+</body>
+</html>
